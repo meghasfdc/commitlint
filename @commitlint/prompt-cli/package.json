@@ -11,7 +11,9 @@
   "scripts": {
     "commit": "$npm_package_bin_commit",
     "deps": "dep-check",
-    "pkg": "pkg-check --skip-main"
+    "pkg": "pkg-check --skip-main",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,8 @@
   },
   "dependencies": {
     "@commitlint/prompt": "^8.3.5",
-    "execa": "^3.4.0"
-  }
+    "execa": "^3.4.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
