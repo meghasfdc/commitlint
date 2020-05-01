@@ -10,7 +10,9 @@
   },
   "scripts": {
     "deps": "dep-check",
-    "pkg": "pkg-check --skip-main"
+    "pkg": "pkg-check --skip-main",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8"
@@ -34,10 +36,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@commitlint/cli": "^8.3.5"
+    "@commitlint/cli": "^8.3.5",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@commitlint/utils": "^8.3.4",
     "@commitlint/test": "8.2.0"
-  }
+  },
+  "snyk": true
 }
