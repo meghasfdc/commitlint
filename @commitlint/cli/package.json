@@ -15,7 +15,9 @@
     "deps": "dep-check",
     "pkg": "pkg-check",
     "start": "yarn run watch",
-    "watch": "babel src --out-dir lib --watch --source-maps"
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "babel": {
     "presets": [
@@ -68,6 +70,8 @@
     "meow": "5.0.0",
     "regenerator-runtime": "0.13.3",
     "resolve-from": "5.0.0",
-    "resolve-global": "1.0.0"
-  }
+    "resolve-global": "1.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
