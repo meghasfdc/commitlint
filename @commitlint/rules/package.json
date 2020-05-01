@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "deps": "dep-check",
-    "pkg": "pkg-check"
+    "pkg": "pkg-check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8"
@@ -44,6 +46,8 @@
     "@commitlint/ensure": "^8.3.4",
     "@commitlint/message": "^8.3.4",
     "@commitlint/to-lines": "^8.3.4",
-    "@commitlint/types": "^8.3.4"
-  }
+    "@commitlint/types": "^8.3.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
