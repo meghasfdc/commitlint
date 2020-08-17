@@ -40,7 +40,7 @@
   "dependencies": {
     "@commitlint/is-ignored": "^8.3.5",
     "@commitlint/parse": "^8.3.4",
-    "@commitlint/rules": "^8.3.4",
+    "@commitlint/rules": "^9.0.0",
     "@commitlint/types": "^8.3.4"
   }
 }
